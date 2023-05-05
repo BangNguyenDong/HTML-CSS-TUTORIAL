@@ -28,6 +28,10 @@ There's a bunch of others [listed here](http://en.wikipedia.org/wiki/List_of_HTM
 5. Highlight Matching Tag
 6. HTML CSS Support
 
+###You can find html/css documentation on the following pages:
+ * [HTML Tag](https://www.w3schools.com/html/default.asp)
+ * [CSS Tag](https://www.w3schools.com/css/default.asp)
+ 
 ###What is HTML?
 1. HTML stands for Hyper Text Markup Language
 2. HTML is the standard markup language for creating Web pages
@@ -72,6 +76,15 @@ These three combine to describe the basic structure of the page:
 <head>: This element designates the header part of the document. You can include optional information about the Web page, such as the title (the browser shows it in the title bar), optional search keywords and an optional style sheet <br>
 <body>: This element contains the content of your Web page, that is, what we want to appear in the navigation area of the browser <br>
 
+###LESSON1
+Topics
+================
+ - Heading
+ - Paragraph
+ - Align
+ - Hr
+ - Br
+ - Fonts
 
 
 
