@@ -31,6 +31,8 @@ There's a bunch of others [listed here](http://en.wikipedia.org/wiki/List_of_HTM
 ###You can find html/css documentation on the following pages:
  * [HTML Tag](https://www.w3schools.com/html/default.asp)
  * [CSS Tag](https://www.w3schools.com/css/default.asp)
+ * [HTML Dog Tag List](https://www.htmldog.com/references/html/tags/)
+ * [Quackit HTML Tag List](https://www.quackit.com/html/tags/)
  
 ###What is HTML?
 1. HTML stands for Hyper Text Markup Language
