@@ -28,6 +28,15 @@ There's a bunch of others [listed here](http://en.wikipedia.org/wiki/List_of_HTM
 5. Highlight Matching Tag
 6. HTML CSS Support
 
+###What is HTML?
+1. HTML stands for Hyper Text Markup Language
+2. HTML is the standard markup language for creating Web pages
+3. HTML describes the structure of a Web page
+4. HTML consists of a series of elements
+5. HTML elements tell the browser how to display the content
+6. HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
+
 ### HTML Tag Structure
 
 Here is a barebones HTML page, about as simple as you can get. You can open it up in the **1 - Structure** folder in the file part1.html. If you were to open the file in your favorite browser (which you can do, go ahead), you'll see a plain webpage with the title "My Website" and the words, "Hello, World!" written on the page. <br>
@@ -48,6 +57,21 @@ You can create this basic structure with the command !+tab or html:5 on an html 
 </html>
 ```
 <img src="https://user-images.githubusercontent.com/71707454/236367249-51ad03fa-e6e7-4cde-b6a6-bb4ac40cbf2a.png" width="600px" height="400px">
+
+###HOW TO CREATE A WEB PAGE
+To create a true HTML document you will start with three container elements:
+```
+<html>
+<head>
+<body>
+```
+<br>
+These three combine to describe the basic structure of the page:
+<br>
+<html>: This element wraps all the content of the page (except the DTD) <br>
+<head>: This element designates the header part of the document. You can include optional information about the Web page, such as the title (the browser shows it in the title bar), optional search keywords and an optional style sheet <br>
+<body>: This element contains the content of your Web page, that is, what we want to appear in the navigation area of the browser <br>
+
 
 
 
