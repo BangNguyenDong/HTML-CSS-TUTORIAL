@@ -82,13 +82,22 @@ These three combine to describe the basic structure of the page:
 ###LESSON1
 Topics
 ================
+ - Comment
  - Heading
  - Paragraph
  - Align
  - Hr
  - Br
+ - Blockquote
  - Fonts
  - Formatting
+ - Button
+ - Label
+ - Input
+ - Select
+ - Checkbox
+ - Radio
+ 
 
 
 
