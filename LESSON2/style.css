@@ -1,0 +1,47 @@
+h3{
+	color: coral;
+}
+
+/*CSS tag */
+/*color is a property and coral is a value*/
+/*ways to use color */
+/*1. color name: coral, red, blue, green, yellow, black, white, etc*/
+/*2. hex code: #000000, #ffffff, #ff0000, #00ff00, #0000ff, etc*/
+/*3. rgb: rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255), etc*/
+/*4. rgba: rgba(255, 0, 0, 0.5), rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5), etc*/
+/*5. hsl: hsl(0, 100%, 50%), hsl(120, 100%, 50%), hsl(240, 100%, 50%), etc*/
+/*hsl is hue, saturation, lightness*/
+/*6. hsla: hsla(0, 100%, 50%, 0.5), hsla(120, 100%, 50%, 0.5), hsla(240, 100%, 50%, 0.5), etc*/
+/*hsla is hue, saturation, lightness, alpha*/
+
+/*CSS TEXT PROPERTIES*/
+/*font-family, font-size, font-weight, text-align, text-decoration, text-transform, line-height, letter-spacing, word-spacing, white-space, word-break, word-wrap, text-indent, vertical-align,  text-transform*/
+/*font-family: Arial, Helvetica, sans-serif; is the font*/
+/*font-size: 16px; is the size of the font*/
+/*font-weight: bold; is the weight of the font*/
+/*text-align: center; is the alignment of the text*/
+/*text-decoration: underline; is the decoration of the text*/
+/*text-indent: 20px; is the text indent of the text*/
+/*text-transform: uppercase; is the transformation of the text*/
+/*line-height: 1.5; is the line height of the text*/
+/*letter-spacing: 1px; is the letter spacing of the text*/
+/*word-spacing: 1px; is the word spacing of the text*/
+/*width: 100%; is the width of the text*/
+/*height: 100%; is the height of the text*/
+
+/*The size of the text can be in px, em, rem, %, etc*/
+
+/*background-color: coral;*/
+body{
+	background-color: #000000;
+}
+/*background-image:url(' path to image');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover; */
+body{
+	background-image: url('https://picsum.photos/200/300');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
