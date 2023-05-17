@@ -1,0 +1,76 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	width: 40%;
+	border-radius: 5px;
+	text-align: center;
+	}
+img {
+	border-radius: 5px 5px 0 0;
+	}
+.container {
+	padding: 2px 16px;
+	}
+/*margin is used to create space around elements
+margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+margin: 25px 50px;
+top and bottom margins are 25px
+right and left margins are 50px
+margin: 25px;
+all four margins are 25px
+margin: auto;
+top and bottom margins are 0
+right and left margins are auto
+*/
+/*padding is used to create space around content
+padding: 25px 50px 75px 100px;
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px
+padding: 25px 50px;
+top and bottom paddings are 25px
+right and left paddings are 50px
+padding: 25px;
+all four paddings are 25px
+*/
+/*border is used to create a border around an element
+border: 1px solid black;
+border-width: 1px;
+border-style: solid; 
+border-color: black;
+boder-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+*/
+/*border-radius is used to create rounded borders
+border-radius: 5px;
+border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 5px 5px;
+border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+*/
+/*box-shadow is used to add shadow to an element
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+box-shadow: h-shadow v-shadow blur spread color;
+h-shadow: Required. The position of the horizontal shadow. Negative values are allowed
+v-shadow: Required. The position of the vertical shadow. Negative values are allowed
+blur: Optional. The blur distance
+spread: Optional. The size of shadow. Negative values are allowed
+color: Optional. The color of the shadow. Look at CSS Color Values for a complete list of possible color values
+*/
+/*class selector
+.classname {
+	property: value;
+	}
+*/
+/*id selector
+#idname {
+	property: value;
+	}
+*/
+
+
+
+
