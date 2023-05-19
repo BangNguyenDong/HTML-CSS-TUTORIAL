@@ -275,7 +275,7 @@ Here's an example that uses some of these properties:
 
 This would set the background image to not repeat, be centered in the element, and fill the element while maintaining its aspect ratio.
 <br>
-###LESSON2 <br>
+###LESSON3 <br>
 
 ## The `<div>` tag in HTML
 
