@@ -520,3 +520,105 @@ Using the `border-box` value, the size of the element will include the content, 
 
 In summary, border is a property used to format the line around an element, while box-sizing is a property used to calculate the size of an element including padding and border. Understanding these properties is crucial for building well-formatted and responsive web pages.
 
+###Lesson3
+<br>
+Below is the document with detailed explanations for the provided code:
+
+```html
+<body>
+	<!-- ul: unordered list -->
+	<!-- ol: ordered list -->
+	<!-- li: list item -->
+	<!-- list-style-type: none, circle, square, decimal, lower-alpha, upper-alpha, lower-roman, upper-roman -->
+	<!-- list-style-position: inside, outside -->
+	<!-- list-style-image: url() -->
+	<!-- float: left, right, none -->
+	<!-- clear: left, right, both, none -->
+	<h1>Unordered List</h1>
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+	<h1>Ordered List</h1>
+	<ol>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ol>
+	<!-- list-style-type: none, circle, square, decimal, lower-alpha, upper-alpha, lower-roman, upper-roman -->
+	<h1>List Style Type</h1>
+	<ul style="list-style-type: circle;">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+	<!-- list-style-position: inside, outside -->
+	<h1>List Style Position</h1>
+	<ul style="list-style-position: inside;">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+	<!-- list-style-image: url() -->
+	<h1>List Style Image</h1>
+	<ul style="list-style-image: url(circle.png);">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+	<h1>Float</h1>
+	<div style="background-color: red; width: 100px; height: 100px; float: left;"></div>
+	<div style="background-color: blue; width: 100px; height: 100px; float: left;"></div>
+	<div style="background-color: green; width: 100px; height: 100px; float: left;"></div>
+	<div style="background-color: yellow; width: 100px; height: 100px; float: left;"></div>
+	<div style="background-color: orange; width: 100px; height: 100px; float: left;"></div>
+	<h1 style="clear:left">Clear</h1>
+	<div style="background-color: red; width: 100px; height: 100px; float: right;"></div>
+	<div style="background-color: blue; width: 100px; height: 100px; float: right;"></div>
+	<div style="background-color: green; width: 100px; height: 100px; float: right;"></div>
+	<div style="background-color: yellow; width: 100px; height: 100px; float: right;"></div>
+	<div style="background-color: orange; width: 100px; height: 100px; float: right;"></div>
+	<h1 style="clear:right">Clear</h1>
+</body>
+```
+
+Explanation:
+
+- The `<body>` tag represents the content of the HTML document that will be displayed in the browser.
+
+Unordered List:
+- The `<ul>` tag is used to create an unordered list.
+- Inside
+
+ the `<ul>`, we have three list items represented by the `<li>` tags.
+- This section demonstrates a basic unordered list.
+
+Ordered List:
+- The `<ol>` tag is used to create an ordered list.
+- Inside the `<ol>`, we have three list items represented by the `<li>` tags.
+- This section demonstrates a basic ordered list.
+
+List Style Type:
+- The `<ul>` tag has a `style` attribute with the `list-style-type` property set to "circle".
+- This changes the bullet points of the unordered list to circles.
+
+List Style Position:
+- The `<ul>` tag has a `style` attribute with the `list-style-position` property set to "inside".
+- This moves the bullet points of the unordered list inside the list items.
+
+List Style Image:
+- The `<ul>` tag has a `style` attribute with the `list-style-image` property set to "url(circle.png)".
+- This replaces the bullet points of the unordered list with a custom image specified by the URL.
+
+Float:
+- Five `<div>` elements are used with different background colors and dimensions.
+- Each `<div>` has a `float` property set to "left", causing them to align horizontally.
+
+Clear:
+- The `<h1>` heading with the "Clear" text has a `style` attribute with the `clear` property set to "left".
+- This clears the left float, allowing the heading to appear below the floated `<div>` elements.
+
+Conclusion:
+- The provided code demonstrates various aspects of HTML lists and CSS styling, including different list types, list item styles, list position, list images, floating elements, and clearing floats.
+- Experiment with the code and make modifications to understand how the different properties and styles affect the appearance of the elements.
