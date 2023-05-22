@@ -520,7 +520,7 @@ Using the `border-box` value, the size of the element will include the content, 
 
 In summary, border is a property used to format the line around an element, while box-sizing is a property used to calculate the size of an element including padding and border. Understanding these properties is crucial for building well-formatted and responsive web pages.
 <br>
-<h1>Lesson3 </h1>
+<h1>Lesson4 </h1>
 <br>
 Below is the document with detailed explanations for the provided code:
 
