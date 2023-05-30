@@ -622,3 +622,64 @@ Clear:
 Conclusion:
 - The provided code demonstrates various aspects of HTML lists and CSS styling, including different list types, list item styles, list position, list images, floating elements, and clearing floats.
 - Experiment with the code and make modifications to understand how the different properties and styles affect the appearance of the elements.
+<br>
+<h1> LESSON5 - DISPLAY - HOVER </h1>
+Here's an example of HTML and CSS code demonstrating block elements, inline elements, and inline-block elements:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS for block elements */
+    .block-element {
+      display: block;
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      margin-bottom: 10px;
+    }
+
+    /* CSS for inline elements */
+    .inline-element {
+      display: inline;
+      padding: 5px;
+      background-color: blue;
+      color: white;
+    }
+
+    /* CSS for inline-block elements */
+    .inline-block-element {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      background-color: green;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Block elements -->
+  <div class="block-element"></div>
+  <div class="block-element"></div>
+
+  <!-- Inline elements -->
+  <span class="inline-element">Element 1</span>
+  <span class="inline-element">Element 2</span>
+  <span class="inline-element">Element 3</span>
+
+  <!-- Inline-block elements -->
+  <div class="inline-block-element"></div>
+  <div class="inline-block-element"></div>
+  <div class="inline-block-element"></div>
+</body>
+</html>
+In the above example, we define three different CSS styles for block elements, inline elements, and inline-block elements. Each style has a different display property.
+
+.block-element uses display: block; to turn the elements into block elements.
+.inline-element uses display: inline; to turn the elements into inline elements.
+.inline-block-element uses display: inline-block; to turn the elements into inline-block elements.
+You can use this example to see the differences in how the elements are displayed in a web browser. We have two block elements displayed vertically, three inline elements displayed side by side, and three inline-block elements displayed side by side.
+
+I hope this example helps you understand the concept of block elements, inline elements, and inline-block elements better.
