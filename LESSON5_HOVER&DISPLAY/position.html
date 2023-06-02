@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+    }
+
+    .fixed {
+      position: fixed;
+      top: 50px;
+      left: 50px;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+
+    .relative {
+      position: relative;
+      top: 50px;
+      left: 50px;
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 50px;
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Giới thiệu thuộc tính và giá trị của 'position' trong CSS</h1>
+
+  <h2>position: static (giá trị mặc định)</h2>
+  <p>Phần tử được hiển thị theo luồng thông thường và không bị ảnh hưởng bởi các thuộc tính top, left, right, bottom.</p>
+
+  <h2>position: fixed</h2>
+  <div class="container">
+    <div class="fixed"></div>
+  </div>
+  <p>Phần tử được đặt vị trí tuyệt đối so với cửa sổ trình duyệt và không di chuyển khi cuộn trang.</p>
+
+  <h2>position: absolute</h2>
+  <div class="container">
+    <div class="absolute"></div>
+  </div>
+  <p>Phần tử được đặt vị trí tuyệt đối đối với phần tử cha gần nhất có thuộc tính `position` khác `static`. Nó có thể di chuyển khi cuộn trang.</p>
+
+  <h2>position: relative</h2>
+  <div class="container">
+    <div class="relative"></div>
+  </div>
+  <p>Phần tử được đặt vị trí tương đối so với vị trí gốc của nó. Các thuộc tính top, left, right, bottom sẽ thay đổi vị trí so với vị trí ban đầu.</p>
+
+  <h2>position: sticky</h2>
+  <div class="container">
+    <div class="sticky"></div>
+  </div>
+  <p>Phần tử dính vị trí dựa trên cuộn trang của người dùng và vẫn nằm trong dòng tài liệu cho đến khi đạt đến ngưỡng xác định. Nó hoạt động tương tự như `position: relative` với phần tử cha, sau đó trở thành `position: fixed` khi cuộn đến một điểm cụ thể.</p>
+</body>
+</html>
