@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+    /* CSS cho thẻ span */
+	.highlight {
+      color: red;
+      font-weight: bold;
+    }
+    /* CSS cho các khối phần tử */
+    .block-element {
+      display: block;
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      margin-bottom: 10px;
+    }
+
+    /* CSS cho các phần tử nội dòng */
+    .inline-element {
+      display: inline;
+      padding: 5px;
+	    margin: 10px;
+      background-color: blue;
+      color: white;
+	    width: 0px; /* Không có tác dụng */
+	    height: 0px; /* Không có tác dụng */
+    }
+
+    /* CSS cho các khối phần tử inline-block */
+    .inline-block-element {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      background-color: green;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Giới thiệu về thẻ span-->
+  <h1>Giới thiệu về <span class="highlight">thẻ span</span></h1>
+  <p>
+    Thẻ <span class="highlight">span</span> là một thẻ đánh dấu cho phần tử nội dung nhỏ, không có ý nghĩa ngữ nghĩa mà chỉ được sử dụng để áp dụng các kiểu dáng hoặc hiệu ứng đặc biệt.
+  </p>
+  <p>
+    Thẻ <span class="highlight">span</span> thường được sử dụng để tạo ra những phần tử nội dòng như tô đậm, in nghiêng, gạch chân hoặc áp dụng các kiểu dáng khác cho một phần nhỏ trong văn bản.
+  </p>
+  <!-- Các khối phần tử -->
+  <div class="block-element"></div>
+  <div class="block-element"></div>
+  <br>
+
+  <!-- Các phần tử nội dòng -->
+  <span class="inline-element">Phần tử 1</span>
+  <span class="inline-element">Phần tử 2</span>
+  <span class="inline-element">Phần tử 3</span>
+  <br>
+  <!-- Các khối phần tử inline-block -->
+  <div class="inline-block-element"></div>
+  <div class="inline-block-element"></div>
+  <div class="inline-block-element"></div>
+  
+</body>
+</html>
