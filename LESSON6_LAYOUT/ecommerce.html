@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trang web thương mại điện tử</title>
+  <style>
+    /* CSS cho layout */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-areas:
+        "header header header"
+        "sidebar main cart"
+        "footer footer footer";
+      grid-gap: 10px;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      grid-area: header;
+    }
+    
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    sidebar {
+      background-color: #f2f2f2;
+      padding: 20px;
+      grid-area: sidebar;
+    }
+    
+    main {
+      padding: 20px;
+      grid-area: main;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+    
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    cart {
+      background-color: #f2f2f2;
+      padding: 20px;
+      grid-area: cart;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trang web thương mại điện tử</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Danh mục sản phẩm</a></li>
+        <li><a href="#">Giỏ hàng</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <sidebar>
+    <h2>Danh mục sản phẩm</h2>
+    <ul>
+      <li><a href="#">Điện thoại di động</a></li>
+      <li><a href="#">Máy tính xách tay</a></li>
+      <li><a href="#">Máy ảnh</a></li>
+    </ul>
+  </sidebar>
+  
+  <main>
+    <div class="product">
+      <img src="product1.jpg" alt="Sản phẩm 1">
+      <h3>Sản phẩm 1</h3>
+      <p>Giá: $100</p>
+      <button>Thêm vào giỏ hàng</button>
+    </div>
+    <div class="product">
+      <img src="product2.jpg" alt="Sản phẩm 2">
+      <h3>Sản phẩm 2</h3>
+      <p>Giá: $150</p>
+      <button>Thêm vào giỏ hàng</button>
+    </div>
+    <div class="product">
+      <img src="product3.jpg" alt="Sản phẩm 3">
+      <h3>Sản phẩm 3</h3>
+      <p>Giá: $200</p>
+      <button>Thêm vào giỏ hàng</button>
+    </div>
+  </main>
+  
+  <cart>
+    <h2>Giỏ hàng</h2>
+    <p>Sản phẩm 1: $100</p>
+    <p>Sản phẩm 2: $150</p>
+    <p>Sản phẩm 3: $200</p>
+    <h3>Tổng cộng: $450</h3>
+    <button>Thanh toán</button>
+  </cart>
+  
+  <footer>
+    <p>Bản quyền &copy; 2023 Trang web thương mại điện tử. Tất cả các quyền được bảo lưu.</p>
+  </footer>
+</body>
+</html>

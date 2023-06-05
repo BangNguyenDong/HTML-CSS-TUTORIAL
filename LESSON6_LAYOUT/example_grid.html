@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thiết kế layout</title>
+  <style>
+    /* CSS cho layout */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: grid; /*Chuyển layout sang grid*/
+      grid-template-rows: auto auto 1fr auto; /*Chia cột thành 4 phần: header, nav, main, footer*/
+      grid-template-columns: 200px 1fr;/*Chia hàng thành 2 phần: sidebar, main*/
+      grid-template-areas: /*Đặt tên cho các phần tử*/
+        "header header"
+	   "nav nav"
+        "sidebar main"
+        "footer footer";
+      grid-gap: 10px; /*Tạo khoảng cách giữa các phần tử*/
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      grid-area: header; /*Đặt vị trí cho phần tử*/
+    }
+    
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+	 grid-area: nav; /*Đặt vị trí cho phần tử*/
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    sidebar {
+      background-color: #f2f2f2;
+      padding: 20px;
+      grid-area: sidebar; /*Đặt vị trí cho phần tử*/
+    }
+    
+    main {
+      padding: 20px;
+      grid-area: main; /*Đặt vị trí cho phần tử*/
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      grid-area: footer; /*Đặt vị trí cho phần tử*/
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trang web của tôi</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Giới thiệu</a></li>
+      <li><a href="#">Dịch vụ</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
+  
+  <sidebar>
+    <h2>Thanh bên</h2>
+    <p>Nội dung thanh bên</p>
+  </sidebar>
+  
+  <main>
+    <h2>Nội dung chính</h2>
+    <p>Nội dung chính của trang web.</p>
+  </main>
+  
+  <footer>
+    <p>Bản quyền &copy; 2023 Trang web của tôi. Tất cả các quyền được bảo lưu.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*Tạo layout với float*/
+		.column {
+			float: left;
+			width: 50%; /* hoặc 33.33% nếu bạn muốn có 3 cột */
+			}
+		.container:after { 
+			clear: both;
+			}
+		/*Tạo layout với flexbox*/
+		.container {
+			display: flex;/* chuyển layout thành flexbox */
+			}
+		.item {
+			flex: 1;/* tỉ lệ 1:1:1 */
+			background-color: #f2f2f2;
+			padding: 20px;
+			}
+		/*Tạo layout với grid*/
+		.container-grid-column {
+			display: grid;
+			grid-template-columns: 1fr 2fr 2fr 1fr; /*Tạo 4 cột với tỉ lệ 1:2:2:1
+			/*fr là viết tắt của fraction, nghĩa là tỉ lệ bằng nhau*/
+			grid-gap: 10px; /* khoảng cách giữa các phần tử */
+
+			}
+		.container-grid-row {
+			display: grid;
+			grid-template-rows: 1fr 2fr 2fr 1fr; /*Tạo 4 hàng với tỉ lệ 1:2:2:1
+			/*fr là viết tắt của fraction, nghĩa là tỉ lệ bằng nhau*/
+			grid-gap: 10px; /* khoảng cách giữa các phần tử */
+			}
+		.container-grid-row-column{
+			display: grid;
+			grid-template-rows: 1fr 2fr; /*Tạo 4 hàng với tỉ lệ 1:2:2:1
+			/*fr là viết tắt của fraction, nghĩa là tỉ lệ bằng nhau*/
+			grid-template-columns: 2fr 1fr; /*Tạo 4 cột với tỉ lệ 1:2:2:1*/
+			grid-gap: 10px; /* khoảng cách giữa các phần tử */
+		}
+
+	</style>
+</head>
+<body>
+	<!--Tạo layout với float-->
+	<h1> Tạo layout với float </h1>
+	<div class="container">
+		<div class="column">
+			<h1> Cột 1 </h1>
+		</div>
+		<div class="column">
+			<h1> Cột 2 </h1>
+		</div>
+
+	</div>
+
+	<!--Tạo layout với flexbox-->
+	<h1> Tạo layout với flexbox </h1>
+	<div class="container">
+		<div class="item">
+		  <!-- Nội dung phần tử 1 -->
+		  <h1> Cột 1 </h1>
+		</div>
+		<div class="item">
+		  <!-- Nội dung phần tử 2 -->
+		  <h1> Cột 2 </h1>
+		</div>
+		<div class="item">
+			<!-- Nội dung phần tử 3 -->
+			<h1> Cột 3 </h1>
+		   </div>
+		   <div class="item">
+			<!-- Nội dung phần tử 4 -->
+			<h1> Cột 4 </h1>
+		   </div>
+	   </div>
+
+	<!--Tạo layout với grid column-->
+	<h1> Tạo layout với grid </h1>
+	<div class="container-grid-column">
+		<div class="item">
+		  <!-- Nội dung phần tử 1 -->
+		  <h1> Cột 1 </h1>
+		</div>
+		<div class="item">
+		  <!-- Nội dung phần tử 2 -->
+		  <h1> Cột 2 </h1>
+		</div>
+		<div class="item">
+			<!-- Nội dung phần tử 3 -->
+			<h1> Cột 3 </h1>
+		   </div>
+		   <div class="item">
+			<!-- Nội dung phần tử 4 -->
+			<h1> Cột 4 </h1>
+		   </div>
+	</div>
+
+	<!--Tạo layout với grid row-->
+	<h1> Tạo layout với grid row </h1>
+	<div class="container-grid-row">
+		<div class="item">
+		  <!-- Nội dung phần tử 1 -->
+		  <h1> Cột 1 </h1>
+		</div>
+		<div class="item">
+		  <!-- Nội dung phần tử 2 -->
+		  <h1> Cột 2 </h1>
+		</div>
+		<div class="item">
+			<!-- Nội dung phần tử 3 -->
+			<h1> Cột 3 </h1>
+		   </div>
+		   <div class="item">
+			<!-- Nội dung phần tử 4 -->
+			<h1> Cột 4 </h1>
+		   </div>
+	</div>
+
+	<!--Tạo layout với grid row và column-->
+	<h1> Tạo layout với grid row và column </h1>
+	<div class="container-grid-row-column">
+		<div class="item">
+		  <!-- Nội dung phần tử 1 -->
+		  <h1> Cột 1 </h1>
+		</div>
+		<div class="item">
+		  <!-- Nội dung phần tử 2 -->
+		  <h1> Cột 2 </h1>
+		</div>
+		<div class="item">
+			<!-- Nội dung phần tử 3 -->
+			<h1> Cột 3 </h1>
+		   </div>
+		   <div class="item">
+			<!-- Nội dung phần tử 4 -->
+			<h1> Cột 4 </h1>
+		   </div>
+	</div>
+
+	   
+</body>
+</html>
