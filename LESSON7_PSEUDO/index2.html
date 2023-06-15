@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		/*CSS pseudo hover để định nghĩa màu cho phần tử đang được hover*/
+		h1:hover{
+			color: red;
+		}
+		/*CSS pseudo active để định nghĩa màu cho phần tử đang được click*/
+		h2:active{
+			color: green;
+		}
+		/*CSS pseudo link để định nghĩa màu cho link chưa được click
+		a:link{
+			color: blue;
+		}*/
+		/*CSS pseudo visited để định nghĩa màu cho link đã được click
+			color: purple;
+		}*/
+		/*CSS pseudo focus để định nghĩa màu cho link đang được focus
+		a:focus{
+			color: yellow;
+		}*/
+		/*CSS pseudo first-child để định nghĩa màu cho phần tử đầu tiên*/
+		li:first-child{
+			color: red;
+		}
+		/*CSS pseudo last-child để định nghĩa màu cho phần tử cuối cùng*/
+		li:last-child{
+			color: green;
+		}
+		/*CSS pseudo nth-child để định nghĩa màu cho phần tử thứ 2*/
+		li:nth-child(2){
+			color: blue;
+		}
+		/*Pseudo elements*/
+		/*CSS pseudo before để định nghĩa nội dung trước phần tử*/
+		#box::before{
+			content: "L";
+			color: red;
+			font-size: 50px;
+			font-weight: bold;
+		}
+		/*CSS pseudo after để định nghĩa nội dung sau phần tử*/
+		#box::after{
+			content: "L";
+			color: red;
+			font-size: 50px;
+			font-weight: bold;
+		}
+		/*CSS pseudo first-line để định nghĩa màu cho dòng đầu tiên*/
+		#box::first-line{
+			color: red;
+		}
+		/*CSS pseudo first-letter để định nghĩa màu cho chữ cái đầu tiên*/
+		#box::first-letter{
+			color:blue;
+			font-size: 150px;
+			font-weight: bold;
+		}
+		/*CSS pseudo selection để định nghĩa màu cho phần tử đang được chọn*/
+		#box::selection{
+			background-color: yellow;
+		}
+		/*CSS pseudo link để định nghĩa màu cho link chưa được click*/
+		a::after{
+			content: " ( " attr(href) " ) ";
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<!--CSS pseudo -->
+	<h1>Pseudo</h1>
+	<h2>Class</h2> 
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+		<li>Contact</li>
+	</ul>
+	<!--Pseudo elements-->
+	<h1>Pseudo elements</h1>
+	<div id="box">Xin chào <br>Siêu nhân lập trình web 6</div>
+	<!--Đặt biến-->
+	<div class="box">
+		<a href="http://www.google.com">Google</a>
+	</div>
+	<!--Thẻ footer dùng để định nghĩa phần cuối trang web-->
+	<footer>
+		<p>Footer</p>
+	</footer>
+</body>
+</html>

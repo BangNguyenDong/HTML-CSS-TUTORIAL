@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Example</title>
+  <style>
+    input {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    input:focus {
+      background-color: yellow;
+      border: 2px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <label for="name">Name:</label>
+  <input type="text" id="name" autofocus>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email">
+
+  <label for="message">Message:</label>
+  <textarea id="message"></textarea>
+</body>
+</html>

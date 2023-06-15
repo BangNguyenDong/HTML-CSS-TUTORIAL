@@ -1,0 +1,397 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+body{
+	font-family:"PoppinsVN","Roboto",Arial,sans-serif;
+}
+
+#Header{
+	color: white;
+	margin-top: 80px;
+	width: 100%;
+	height: 200px;
+	background:url(pano-bg.png);
+	box-sizing: border-box;
+	line-height: 60px;
+}
+
+#Header .link a{
+	color: white;
+	text-decoration: none;
+}
+
+#Header .link li{
+	display: inline-block;
+}
+
+#Header .header_content{
+	padding: 59px;
+	float: left
+}
+
+
+
+#Heading {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+#Heading .Menu{
+	text-align: center;
+}
+#Heading .Menu li{
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+
+}
+
+#Heading .main-menu{
+	text-decoration: none;
+	display: block;
+	color: black;
+	padding: 12px 20px;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 32px;
+	margin-left: -18px;
+}
+
+#Heading .main-menu:hover{
+	color: #5dc2a7;
+}
+
+#Heading .icon-header{
+	float: left;
+	width: 330px;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#Heading .icon-header img{
+	width: auto;
+    height: auto;
+    max-height: 52px;
+}
+
+#Heading .sub-menu{
+	position: absolute;
+	width: 300px;
+	background-color: white;
+	padding-left: 50px;
+	margin-left: -50px;
+	display: none;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+#Heading .Menu li:hover .sub-menu{
+	display: block;
+}
+
+
+#Heading .course1{
+	border-bottom: dashed 1px #5dc2a7;
+	width: 300px;
+	padding-left: 50px;
+	margin-left: -50px;
+	text-align: left;
+}
+
+#Heading .course1 a{
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+#Heading .course1:hover{
+	background-color: #5dc2a7;
+	color: black;	
+}
+
+#Header-image{
+	height: 1000px;
+	margin-top: 26px;
+}
+
+#content{
+	margin-top: 70px;
+	text-align: justify;
+	font-size: 14px;
+}
+
+.content1{
+	margin: auto;
+	width: 87%;
+}
+
+.content1 .part1{
+	width: 60%;
+	margin-right: 50px;
+	float: left;
+	padding-top: 25px;
+	padding-bottom: 100px;
+}
+.content1 .part2{
+	width: 30%;
+	float: left;
+}
+
+.content1 .part2 img{
+	width: 125%;
+}
+
+.clear{
+	clear: both;
+}
+
+.content2{
+	width: 100%;
+}
+
+.content2 .content2_1{
+	width: 26%;
+	padding-top: 25px;
+	padding-left: 6.5%;
+	padding-right: 1%;
+	background-color: #f2f5fa;
+	float: left;
+	box-sizing: border-box;
+	height: 500px;
+}
+
+.content2 .content2_2{
+	float: left;
+	box-sizing: border-box;
+}
+
+.content2 .content2_3{
+	margin-top:42px;
+	width: 27.3%;
+	padding-left: 1%;
+	padding-right: 6.5%;
+	float: left;
+	background-color: #f2f5fa;
+	box-sizing: border-box;
+}
+
+.content3{
+	width: 100%;
+	text-align: center;
+}
+
+.content3 .content3_1{
+	text-align: justify;
+	width: 25%;
+	padding-top: 25px;
+	padding-left: 6.5%;
+	padding-right: 1%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.content3 .content3_2{
+	text-align: justify;
+	width: 25%;
+	padding-top: 25px;
+	padding-left: 6.5%;
+	padding-right: 1%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.content3 .content3_3{
+	text-align: justify;
+	width: 50%;
+	padding-top: 25px;
+	padding-right: 6.5%;
+	float: left;
+	box-sizing: border-box;
+}
+
+#gallery{
+	margin-top: 100px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery1{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.10.png;);
+	background-position: center center;
+	width: calc(100%/6);
+	height: calc(227.66px*2);
+	float: left;
+	cursor:pointer;
+}
+
+.gallery_group{
+	float: left;
+	width: calc(100%/6);
+}
+
+.gallery2{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.9.png;);
+	background-position: center center;
+	width: 100%;
+	height: 227.66px;
+	background-size: cover;
+	cursor:pointer;
+	
+}
+
+.gallery3{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.5-1.png;);
+	background-position: center center;
+	width: 100%;
+	height: 227.66px;
+	background-size: cover;
+	cursor:pointer;
+}
+
+.gallery4{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.8.png;);
+	background-position: center center;
+	width: calc(100%/3);
+	height: calc(227.66px*2);
+	background-size: cover;
+	float: left;
+	cursor:pointer;
+}
+
+.gallery5{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.6.png;);
+	background-position: center center;
+	width: calc(100%/6);
+	height: 227.66px;
+	background-size: cover;
+	float: right;
+	cursor:pointer;
+}
+
+.gallery6{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.7.png;);
+	background-position: center center;
+	width: calc(100%/6);
+	height: 227.66px;
+	background-size: cover;
+	float: right;
+	cursor:pointer;
+}
+.gallery7{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.4-1.png;);
+	background-position: center center;
+	width: calc(100%/3);
+	height: calc(227.66px*2);
+	background-size: cover;
+	float: right;
+	cursor:pointer;
+}
+
+.gallery8{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.3-1.png;);
+	background-position: center center;
+	width: calc(100%/3);
+	height: calc(227.66px);
+	background-size: cover;
+	float: left;
+	cursor:pointer;
+}
+
+.gallery9{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.2-1.png;);
+	background-position: center center;
+	width: calc(100%/6);
+	height: calc(227.66px);
+	background-size: cover;
+	float: left;
+	cursor:pointer;
+}
+
+.gallery10{
+	background: url(https://teky.edu.vn/wp-content/uploads/2019/11/Anh.1-2.png;);
+	background-position: center center;
+	width: calc(100%/6);
+	height: calc(227.66px);
+	background-size: cover;
+	float: left;
+	cursor:pointer;
+}
+
+
+
+#Main_footer{
+		padding: 50px 20px;
+		width: 100%;
+		box-sizing: border-box;
+		overflow: hidden;
+}
+
+#Main_footer .row_footer{
+	width: 100%;
+}
+
+#Main_footer .col_footer{
+	width: calc(100%/4);
+	float: left;
+	padding: 0 15px;
+	box-sizing: border-box;
+
+}
+
+.col_footer .footer_list{
+	margin: 30px 20px;
+}
+
+.footer_list a{
+	text-decoration: none;
+	color: blue;
+	line-height: 1.5
+}
+
+.col_footer .footer_list1{
+	margin: 30px 20px;
+}
+
+.footer_list1 a{
+	text-decoration: none;
+	color: black;
+	line-height: 1.5
+}
+
+.footer_info{
+	margin: 20px 0
+}
+
+.icon_link{
+	width: 10%
+}
+
+.bct_icon{
+	width: 100%;
+}
+
+.clear{
+	clear: both;
+}
+.Copyright{
+	padding: 5px 50px;
+}
+
+.Copyright .Copyright_image{
+	height: 40px;
+}
+
+.Copyright .Content{
+	float: right;
+	line-height: 40px
+
+
+}
