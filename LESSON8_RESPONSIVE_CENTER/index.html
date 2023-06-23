@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			color: red;
+			text-align: center;
+		}
+		/* Các cách để đưa phần tử ra giữa theo chiều ngang */
+		/* Cách 1: Sử dụng margin */	
+		.n1{
+			width: 500px;
+			height: 500px;
+			background-color: #ccc;
+			margin: 0 auto;
+			border: 1px solid red;
+			text-align: center;
+		}
+		/* Cách 2: Sử dụng margin-left và margin-right */
+		.n2{
+			width: 500px;
+			height: 500px;
+			background-color: #ccc;
+			margin-left: auto;
+			margin-right: auto;
+			border: 1px solid red;
+			text-align: center;
+		}
+		/* Cách 3: Sử dụng position: absolute */
+		.n3{
+			width: 500px;
+			height: 500px;
+			background-color: #ccc;
+			position: relative;/* vị trí tuyệt đối */
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border: 1px solid red;
+			text-align: center;
+		}
+		/* Các cách để đưa phần tử ra giữa theo chiều dọc */
+		/* Cách 1: Sử dụng margin */
+		.d1{
+			display: flex;
+  			justify-content: center; /* căn giữa theo chiều ngang */
+ 			align-items: center; /* căn giữa theo chiều dọc */
+  			height: 500px; /* chỉ để thấy rõ vị trí giữa */
+  			border: 1px solid black; /* chỉ để thấy rõ vị trí giữa */
+		}
+		.centered-element{
+			background-color: #ccc;
+			width: 500px;
+			height: 500px;
+			text-align: center;
+			
+		}
+		/* Cách 2: Sử dụng thuộc tính "line-height" và "height" cho phần tử cha */
+		.d2{
+			height: 500px; /* Chiều cao cố định */
+  			line-height: 500px; /* Bằng chiều cao của phần tử cha */
+ 			text-align: center;
+			border: 1px solid black; /* chỉ để thấy rõ vị trí giữa */
+			width: 500px;
+		}
+		.d2-1{
+			display: inline-block;
+  			vertical-align: middle;
+  			line-height: normal; /* Đặt lại line-height về giá trị mặc định */
+		}
+	</style>
+</head>
+<body>
+	<!--Các cách để đưa phần tử ra giữa theo chiều ngang-->
+	<h1>Cách để đưa phần tử ra giữa theo chiều ngang</h1>
+	<!--Cách 1: Sử dụng margin-->
+	<div class="n1">
+		<h1>Đây là cách 1 sử dụng margin</h1>
+	</div>
+	<!--Cách 2: Sử dụng margin-left và margin-right-->
+	<div class="n2">
+		<h1>Đây là cách 2 sử dụng margin-left và margin-right</h1>
+	</div>
+	<!--Cách 3: Sử dụng position: absolute-->
+	<div class="n3">
+		<h1>Đây là cách 3 sử dụng position: absolute</h1>
+	</div>
+	<!--Các cách để đưa phần tử ra giữa theo chiều dọc-->
+	<h1>Cách để đưa phần tử ra giữa theo chiều dọc</h1>
+	<!--Cách 1: Sử dụng display: flex-->
+	<div class="d1">
+			<div class="centered-element">Lorem ipsum dolor sit amet.</div>
+	</div>
+	<!--Cách 2: Sử dụng thuộc tính "line-height" và "height" cho phần tử cha-->
+	<div class="d2">
+		<div class="d2-1">
+			<h1>Đây là cách 2 sử dụng thuộc tính "line-height" và "height" cho phần tử cha</h1>
+		</div>
+	</div>
+
+</body>
+</html>

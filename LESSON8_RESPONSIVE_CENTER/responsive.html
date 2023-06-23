@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive CSS Grid Demo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+	.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /*repeat(auto-fit, minmax(200px, 1fr)): Tạo ra các cột có chiều rộng tối thiểu là 200px và tối đa là 1fr (1 fraction unit). Các cột này sẽ được tự động xếp hàng ngang khi chiều rộng màn hình lớn hơn 1200px.*/
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.item {
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+/*Nếu chiều rộng màn hình nhỏ hơn 600px thì sẽ có 1 cột*/
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+/*Nếu chiều rộng màn hình lớn hơn 600px và nhỏ hơn 1200px thì sẽ có 2 cột*/
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+/*Nếu chiều rộng màn hình lớn hơn 1200px thì sẽ có 3 cột*/
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+    <div class="item">Item 9</div>
+  </div>
+</body>
+</html>

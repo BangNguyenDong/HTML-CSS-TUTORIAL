@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive CSS Grid Demo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+
+	/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.feature {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  /* Điều chỉnh kiểu layout cho màn hình có độ rộng tối đa 600px */
+
+  main {
+    padding: 10px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /* Điều chỉnh kiểu layout cho màn hình có độ rộng từ 601px đến 1200px */
+  
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  /* Điều chỉnh kiểu layout cho màn hình có độ rộng lớn hơn 1200px */
+
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive CSS Grid Demo</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to our website</h2>
+        <p>Discover amazing things with responsive CSS Grid!</p>
+        <a href="#" class="cta-button">Learn More</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Responsive Design</h3>
+        <p>Our website is built with responsive CSS Grid to ensure it looks great on any device.</p>
+      </div>
+      <div class="feature">
+        <h3>Flexible Layouts</h3>
+        <p>Responsive CSS Grid allows us to create flexible layouts that adapt to different screen sizes.</p>
+      </div>
+      <div class="feature">
+        <h3>Media Queries</h3>
+        <p>We use media queries to apply specific styles based on the device's screen size.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Responsive CSS Grid Demo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
